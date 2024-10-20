@@ -1,8 +1,8 @@
 '''
 1. Identify the root node for which p &q are children or one of p/q is a root.
 2. We begin by checking if root is one of both the nodes, in that case return root.
-3. Else we check the left and right children for p and q. 
-4. If both children are found to be p and q, we return this root node as LCA; either p or q found in any child, we return that child. 
+3. Else we check the left and right children for p and q recursively. 
+4. If both l and r are not None, we return this root node as LCA. If either p or q was found in any child, we return that node. 
 
 TC: O(n)
 SC: O(h) 
